@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvMascotas"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/primary_light"
+        android:padding="5dp"
+        android:layout_margin="15dp">
+
+        <ImageView
+            android:id="@+id/ivFoto"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/perrito1"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:contentDescription="@string/todo">
+        </ImageView>
+
+          <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="4">
+
+            <ImageButton
+                android:layout_columnWeight="1"
+                android:id="@+id/ivHuesoBlanco"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:background="@drawable/blanco"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/todo">
+            </ImageButton>
+
+            <TextView
+                android:layout_columnWeight="1"
+                android:id="@+id/tvNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:layout_columnWeight="1"
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="viewEnd"
+                android:paddingTop="10dp"
+                />
+
+            <ImageView
+                android:layout_columnWeight="1"
+                android:id="@+id/ivHuesoAmarillo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/amarillo"
+                android:contentDescription="@string/todo">
+            </ImageView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.Mascotas"
+    >
+
+    <item
+        android:title="@string/mabout"
+        android:id="@+id/mAbout"
+        android:orderInCategory="100"
+
+        >
+
+    </item>
+
+    <item
+        android:title="@string/mcontacto"
+        android:id="@+id/mContacto"
+        android:orderInCategory="101">
+
+    </item>
+
+
+</menu>
